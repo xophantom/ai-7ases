@@ -1,0 +1,19 @@
+{
+  "name": "7ases",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "leosperandio",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.5",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "@langchain/openai": "^0.0.26",
+    "@langchain/redis": "^0.0.2",
+    "dotenv": "^16.4.5",
+    "langchain": "^0.1.31",
+    "redis": "^4.6.13"
+  }
+}
