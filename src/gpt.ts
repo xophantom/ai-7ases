@@ -1,8 +1,8 @@
+import 'dotenv/config'
 import { ChatOpenAI } from "@langchain/openai";
 import { PromptTemplate } from '@langchain/core/prompts';
 import { RetrievalQAChain } from 'langchain/chains';
 import { redis, redisVectorStore } from "./redis-store";
-import 'dotenv/config'
 
 const openAiChat= new ChatOpenAI({
   openAIApiKey: process.env.OPENAI_API_KEY,
@@ -36,7 +36,7 @@ async function main() {
   await redis.connect()
 
   const response = await chain.call({
-    query: 'huehue'
+    query: 'Quais valores da empresa 7ases?'
   })
 
   console.log(response)
